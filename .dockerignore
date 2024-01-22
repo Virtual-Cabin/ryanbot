@@ -1,0 +1,11 @@
+node_modules
+build
+.idea
+.gitignore
+.eslintrc
+.prettierrc.json
+.prettierignore
+README.md
+Dockerfile
+template.env
+.env
