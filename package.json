@@ -1,44 +1,40 @@
 {
-  "name": "discord-bot-template",
+  "name": "ryanbot",
   "version": "1.0.0",
-  "description": "A Discord bot boilerplate including TypeScript and ESLint.",
-  "author": {
-    "email": "fellipeutaka@gmail.com",
-    "name": "Fellipe Utaka"
-  },
+  "description": "A human replacement discord bot.",
   "license": "MIT",
   "private": true,
-  "homepage": "https://github.com/fellipeutaka/discord-bot-template",
+  "homepage": "https://github.com/Virtual-Cabin/ryanbot",
   "repository": {
     "type": "git",
-    "url": "https://github.com/fellipeutaka/discord-bot-template.git"
+    "url": "https://github.com/Virtual-Cabin/ryanbot.git"
   },
-  "main": "dist/index.js",
+  "main": "index.js",
   "scripts": {
-    "dev": "tsx watch src/index.ts",
-    "start": "node .",
-    "build": "tsup src/index.ts --minify",
-    "format": "prettier --write \"**/*.{json,ts}\"",
-    "lint": "eslint . --ext ts --fix"
+    "build": "tsc",
+    "start": "node build/index.js",
+    "start:production": "pnpm build && pnpm start",
+    "dev": "nodemon -L"
   },
   "dependencies": {
     "discord.js": "^14.7.1",
     "dotenv": "^16.0.3",
     "natural": "^6.10.4",
-    "node-nlp-typescript": "^1.0.3"
+    "nodemon": "^3.0.3"
   },
   "devDependencies": {
-    "@types/node": "^18.13.0",
-    "@typescript-eslint/eslint-plugin": "^5.51.0",
-    "@typescript-eslint/parser": "^5.51.0",
+    "@types/node": "^20.11.5",
+    "@typescript-eslint/eslint-plugin": "^6.19.1",
+    "@typescript-eslint/parser": "^6.19.1",
     "eslint": "^8.33.0",
-    "eslint-config-prettier": "^8.6.0",
+    "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-import": "^2.25.2",
-    "eslint-plugin-n": "^15.0.0",
+    "eslint-plugin-n": "^16.6.2",
     "eslint-plugin-promise": "^6.0.0",
-    "prettier": "^2.8.4",
-    "tsup": "^6.6.0",
-    "tsx": "^3.12.3",
-    "typescript": "^4.9.5"
+    "prettier": "^3.2.4",
+    "ts-node": "^10.9.2",
+    "tsup": "^8.0.1",
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.3"
   }
 }
