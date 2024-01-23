@@ -1,0 +1,1 @@
+export type ResponseCategories = 'casual' | 'angry' | 'dnd' | 'republican';
