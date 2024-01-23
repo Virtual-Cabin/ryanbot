@@ -6,10 +6,10 @@ settings:
 
 dependencies:
   discord.js:
-    specifier: ^14.7.1
+    specifier: ^14.14.1
     version: 14.14.1
   dotenv:
-    specifier: ^16.0.3
+    specifier: ^16.3.2
     version: 16.3.2
   natural:
     specifier: ^6.10.4
@@ -29,19 +29,19 @@ devDependencies:
     specifier: ^6.19.1
     version: 6.19.1(eslint@8.56.0)(typescript@5.3.3)
   eslint:
-    specifier: ^8.33.0
+    specifier: ^8.56.0
     version: 8.56.0
   eslint-config-prettier:
     specifier: ^9.1.0
     version: 9.1.0(eslint@8.56.0)
   eslint-plugin-import:
-    specifier: ^2.25.2
+    specifier: ^2.29.1
     version: 2.29.1(@typescript-eslint/parser@6.19.1)(eslint@8.56.0)
   eslint-plugin-n:
     specifier: ^16.6.2
     version: 16.6.2(eslint@8.56.0)
   eslint-plugin-promise:
-    specifier: ^6.0.0
+    specifier: ^6.1.1
     version: 6.1.1(eslint@8.56.0)
   prettier:
     specifier: ^3.2.4
